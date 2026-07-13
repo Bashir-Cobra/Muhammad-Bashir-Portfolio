@@ -235,7 +235,11 @@
     padding:0 22px;
     display:inline-flex; align-items:center; gap:22px;
   }
-  .ticker-track span::after{content:"◆"; font-size:9px; opacity:.55;}
+  .ticker-track > span > span::after{
+    content:"◆"; 
+    font-size:9px; 
+    opacity:.55;
+  }
   @keyframes scroll-left{
     from{transform:translateX(0);}
     to{transform:translateX(-50%);}
